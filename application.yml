@@ -1,0 +1,73 @@
+server:
+  port: 7777
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          #uri: https://ykhaliti@bitbucket.org/binarios/hisconfigrepo.git
+          uri: git@bitbucket.org:binarios/hisconfigserver.git
+          #username: y.khaliti@binarios-it.com
+          ignore-local-ssh-settings: true
+          passphrase: binarios
+          search-paths:
+            - '*/**'
+          #skip-ssl-validation: true
+          #host-key: binarios
+          #host-key-algorithm: ssh-rsa
+          privateKey:  |
+            -----BEGIN RSA PRIVATE KEY-----
+            Proc-Type: 4,ENCRYPTED
+            DEK-Info: AES-128-CBC,E259EA276B1531C3150AF087F0DC3FDD
+
+            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
+            -----END RSA PRIVATE KEY-----
+          cloneOnStart: true
